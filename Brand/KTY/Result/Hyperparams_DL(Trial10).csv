@@ -1,0 +1,21 @@
+﻿Algorithm,Hyperparameter,Tuning Range,Best Value
+MLP,n_layers,User Fixed,1
+MLP,l2_regularization,User Fixed,0.0004045771486051293
+MLP,batch_normalization,User Fixed,False
+MLP,hidden_activation,User Fixed,gelu
+MLP,dropout,User Fixed,0.13989325901689487
+MLP,batch_size,User Fixed,32
+MLP,optimizer,User Fixed,rmsprop
+MLP,learning_rate,User Fixed,0.0018610826278839417
+MLP,first_layer_nodes,User Fixed,192
+MLP,shape,User Fixed,funnel
+CNN,n_layers,User Fixed,3
+CNN,l2_regularization,User Fixed,8.839820621044363e-06
+CNN,batch_normalization,User Fixed,True
+CNN,hidden_activation,User Fixed,gelu
+CNN,dropout,User Fixed,0.3820316982982904
+CNN,batch_size,User Fixed,128
+CNN,optimizer,User Fixed,rmsprop
+CNN,learning_rate,User Fixed,0.0013859457096972406
+CNN,base_filters,User Fixed,32
+CNN,kernel_size,User Fixed,7
