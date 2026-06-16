@@ -1,0 +1,253 @@
+import os
+import numpy as np
+import pandas as pd
+
+# ==============================================================================
+# [CONFIG & DIRECTORY SETTING]
+# ==============================================================================
+OUTPUT_DIR = "results/scenarios"
+PRED_DIR = os.path.join(OUTPUT_DIR, "predictions")
+
+# Scenarios defined in ablation_study_dml.ipynb
+SCENARIOS = {
+    "T_calendar": "Baseline + T(Calendar)",
+    "T_fatigue": "Baseline + T(Fatigue)",
+    "T_risk": "Baseline + T(Risk)",
+    "T_preference": "Baseline + T(Preference)"
+}
+
+# ==============================================================================
+# [METRIC CALCULATION FUNCTIONS]
+# ==============================================================================
+
+def compute_gain_curve(y, t, cate):
+    """
+    Computes the Uplift Cumulative Gain curve.
+    Formula: Gain = (Y_t / N_t - Y_c / N_c) * (N_t + N_c)
+    """
+    order = np.argsort(cate)[::-1]
+    y_sorted = y[order]
+    t_sorted = t[order]
+    
+    n_t = np.cumsum(t_sorted == 1)
+    n_c = np.cumsum(t_sorted == 0)
+    y_t = np.cumsum(y_sorted * (t_sorted == 1))
+    y_c = np.cumsum(y_sorted * (t_sorted == 0))
+    
+    with np.errstate(divide='ignore', invalid='ignore'):
+        mean_y_t = np.where(n_t == 0, 0.0, y_t / n_t)
+        mean_y_c = np.where(n_c == 0, 0.0, y_c / n_c)
+        gain = (mean_y_t - mean_y_c) * (n_t + n_c)
+        
+    return gain
+
+def calculate_auuc_bootstrap(y, t, cate, n_bootstraps=50, seed=42):
+    """
+    Calculates the normalized AUUC (Area Under the Uplift Curve) using bootstrap.
+    Uses the stable final gain of the original test set for normalization.
+    """
+    rng = np.random.default_rng(seed)
+    norm_auuc_list = []
+    n = len(y)
+    
+    # Calculate stable final gain of the original test set
+    n_t_orig = np.sum(t == 1)
+    n_c_orig = np.sum(t == 0)
+    y_t_orig = np.sum(y * (t == 1))
+    y_c_orig = np.sum(y * (t == 0))
+    
+    with np.errstate(divide='ignore', invalid='ignore'):
+        final_gain_orig = (y_t_orig / n_t_orig - y_c_orig / n_c_orig) * n
+        
+    abs_final_gain_orig = abs(final_gain_orig)
+    
+    for _ in range(n_bootstraps):
+        boot_idx = rng.choice(n, size=n, replace=True)
+        y_b = y[boot_idx]
+        t_b = t[boot_idx]
+        cate_b = cate[boot_idx]
+        
+        gain = compute_gain_curve(y_b, t_b, cate_b)
+        final_gain = gain[-1]
+        
+        if abs_final_gain_orig == 0:
+            norm_auuc_list.append(0.0)
+            continue
+            
+        normalized_gain = gain / abs_final_gain_orig
+        auuc = np.mean(normalized_gain)
+        norm_auuc_list.append(auuc)
+        
+    return np.mean(norm_auuc_list), np.std(norm_auuc_list)
+
+def calculate_expected_uplift(cate, k_percent):
+    """
+    Calculates the Expected Uplift (sum of predicted CATE) for the top K% users.
+    Also returns the random targeting expected uplift at K% for comparison.
+    """
+    n = len(cate)
+    cutoff = int(n * k_percent / 100)
+    
+    cate_sorted = np.sort(cate)[::-1]
+    model_uplift = np.sum(cate_sorted[:cutoff])
+    random_uplift = (k_percent / 100.0) * np.sum(cate)
+    
+    return int(round(model_uplift)), int(round(random_uplift))
+
+def calculate_negative_cate_avoidance(cate, threshold_pct=15):
+    """
+    Calculates the normalized avoidance rate (Random = 0%, Perfect = 100%).
+    Uses 15% threshold by default.
+    """
+    n = len(cate)
+    is_neg = (cate < 0)
+    total_neg = np.sum(is_neg)
+    
+    if total_neg == 0:
+        return 0, 0.0, 0.0
+        
+    order_asc = np.argsort(cate)
+    cutoff = int(n * threshold_pct / 100)
+    bottom_indices = order_asc[:cutoff]
+    
+    neg_avoided = np.sum(is_neg[bottom_indices])
+    raw_rate = neg_avoided / total_neg
+    
+    p = threshold_pct / 100.0
+    if p < 1.0:
+        norm_rate = (raw_rate - p) / (1.0 - p)
+    else:
+        norm_rate = 1.0
+        
+    return int(neg_avoided), raw_rate, max(0.0, norm_rate)
+
+
+
+def df_to_markdown_string(df):
+    """Converts a pandas DataFrame to a markdown table string without padding (keeps lines short)."""
+    headers = list(df.columns)
+    header_str = "| " + " | ".join(headers) + " |"
+    sep_str = "| " + " | ".join("-" * max(3, len(h)) for h in headers) + " |"
+    
+    row_strs = []
+    for idx, row in df.iterrows():
+        r_str = "| " + " | ".join(str(val) for val in row.values) + " |"
+        row_strs.append(r_str)
+        
+    return "\n".join([header_str, sep_str] + row_strs)
+
+# ==============================================================================
+# [MAIN EXECUTION]
+# ==============================================================================
+
+def main():
+    # Check if prediction directory exists
+    search_dirs = [PRED_DIR, "predictions", "results/predictions", "."]
+    actual_pred_dir = None
+    for d in search_dirs:
+        if os.path.exists(d) and any(f.endswith("_cate.npy") for f in os.listdir(d)):
+            actual_pred_dir = d
+            break
+            
+    if not actual_pred_dir:
+        print(f"[!] Error: Could not find any prediction files (*_cate.npy) in search directories: {search_dirs}")
+        return
+        
+    results = []
+    random_metrics = {
+        "uplift_10": [],
+        "uplift_20": [],
+        "uplift_30": [],
+        "uplift_40": [],
+        "uplift_50": []
+    }
+    
+    for sc, display_name in SCENARIOS.items():
+        cate_file = os.path.join(actual_pred_dir, f"{sc}_cate.npy")
+        y_file = os.path.join(actual_pred_dir, f"{sc}_y_test.npy")
+        t_file = os.path.join(actual_pred_dir, f"{sc}_t_test.npy")
+        
+        if not (os.path.exists(cate_file) and os.path.exists(y_file) and os.path.exists(t_file)):
+            continue
+            
+        cate = np.load(cate_file)
+        y = np.load(y_file)
+        t = np.load(t_file)
+        
+        # 1. AUUC
+        norm_mean, norm_std = calculate_auuc_bootstrap(y, t, cate, n_bootstraps=50)
+        
+        # 2. Expected Uplift
+        up_10, rand_10 = calculate_expected_uplift(cate, 10)
+        up_20, rand_20 = calculate_expected_uplift(cate, 20)
+        up_30, rand_30 = calculate_expected_uplift(cate, 30)
+        up_40, rand_40 = calculate_expected_uplift(cate, 40)
+        up_50, rand_50 = calculate_expected_uplift(cate, 50)
+        
+        random_metrics["uplift_10"].append(rand_10)
+        random_metrics["uplift_20"].append(rand_20)
+        random_metrics["uplift_30"].append(rand_30)
+        random_metrics["uplift_40"].append(rand_40)
+        random_metrics["uplift_50"].append(rand_50)
+        
+        # 3. Negative CATE Avoidance (using 15% threshold by default)
+        _, _, norm_av_15 = calculate_negative_cate_avoidance(cate, 15)
+        
+        # Format metrics to match user's table style exactly
+        results.append({
+            "시나리오": display_name,
+            "AUUC": f"{norm_mean:+.3f} ± {norm_std:.3f}" if norm_mean < 0 else f"{norm_mean:.3f} ± {norm_std:.3f}",
+            "Top 10% Expected Uplift": f"{up_10:,}",
+            "Top 20% Expected Uplift": f"{up_20:,}",
+            "Top 30% Expected Uplift": f"{up_30:,}",
+            "Top 40% Expected Uplift": f"{up_40:,}",
+            "Top 50% Expected Uplift": f"{up_50:,}",
+            "Negative CATE Avoidance": f"{norm_av_15:.1%}"
+        })
+        
+    if not results:
+        print("[!] No results processed.")
+        return
+        
+    # Construct a single unified Random Targeting row at the top (matches the user's table layout)
+    baseline_row = {
+        "시나리오": "Random Targeting (Baseline)",
+        "AUUC": "0.500",
+        "Top 10% Expected Uplift": f"{int(round(np.mean(random_metrics['uplift_10']))):,}",
+        "Top 20% Expected Uplift": f"{int(round(np.mean(random_metrics['uplift_20']))):,}",
+        "Top 30% Expected Uplift": f"{int(round(np.mean(random_metrics['uplift_30']))):,}",
+        "Top 40% Expected Uplift": f"{int(round(np.mean(random_metrics['uplift_40']))):,}",
+        "Top 50% Expected Uplift": f"{int(round(np.mean(random_metrics['uplift_50']))):,}",
+        "Negative CATE Avoidance": "0.0%"
+    }
+    
+    final_rows = [baseline_row] + results
+    df_report = pd.DataFrame(final_rows)
+    md_table = df_to_markdown_string(df_report)
+    
+    print("\n" + "="*90)
+    print("Table 1. 시나리오별 비즈니스 임팩트 및 예측 성능 비교")
+    print("="*90)
+    print(md_table)
+    print("="*90)
+    
+    # Save to Markdown files
+    report_paths = [
+        os.path.join(OUTPUT_DIR, "business_impact_report.md"),
+        "business_impact_report.md"
+    ]
+    
+    for r_path in report_paths:
+        try:
+            dir_name = os.path.dirname(r_path)
+            if dir_name:
+                os.makedirs(dir_name, exist_ok=True)
+            with open(r_path, "w", encoding="utf-8") as f:
+                f.write("# Table 1. 시나리오별 비즈니스 임팩트 및 예측 성능 비교\n\n")
+                f.write(md_table)
+            print(f"[OK] Business impact report successfully saved to: {os.path.abspath(r_path)}")
+        except Exception as e:
+            print(f"[!] Failed to save markdown report to {r_path}: {e}")
+
+if __name__ == "__main__":
+    main()
