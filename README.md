@@ -24,24 +24,30 @@
 저는 핀테크를 포함한 전반적인 금융경제 산업의 거래 시장과 온라인 광고 마케팅을 주로 연구하지만,     
 여러분들 중에서 데이터애널리스트 또는 데이터싸이언티스트로 경쟁력을 갖추고 본인을 브랜딩하는데 관심있는 학생들을 모집합니다.     
 
-<img width="1752" height="1174" alt="Image" src="https://github.com/user-attachments/assets/3e3802ef-41ae-4838-84be-685d1bdeeae8" />
-
 - **1기 멤버:** **`손도언`**, 차명주, 장민재, 임보민
 - **2기 멤버:** 박재흥, **`유효정`**, 조은지, 강보현, 이현서, 방가연, 이준형
 - **3기 멤버:** 서정민, 김태영, **`문정연`**, 김채빈, 전호준, 박희선, 이혜진
 - **4기 멤버:** 2026년 6월 모집 후 7월부터 활동 예정 (분기별 유령회원 정리 및 Branding 달성 후 정식멤버로 임명됨)
 
-<img width="1480" height="1850" alt="Image" src="https://github.com/user-attachments/assets/4bd84a62-0003-4f97-a531-9334524e7db1" />
-<img width="1480" height="1850" alt="Image" src="https://github.com/user-attachments/assets/d3955337-1ae6-4732-9b0b-39ccc6c4bfde" />
-<img width="1480" height="1850" alt="Image" src="https://github.com/user-attachments/assets/96898caf-c68b-4e6d-ac7e-a81033acac69" />
-<img width="1480" height="1850" alt="Image" src="https://github.com/user-attachments/assets/ad3f57bd-3db6-41c3-9ad6-0d68bd2235bb" />
-<img width="1480" height="1850" alt="Image" src="https://github.com/user-attachments/assets/33dce8ba-7632-47e9-99a4-a8cbe4351646" />
-<img width="1480" height="1850" alt="Image" src="https://github.com/user-attachments/assets/66b1c10e-85f1-4252-88da-cef2834d9076" />
-<img width="1480" height="1850" alt="Image" src="https://github.com/user-attachments/assets/424c8dda-4887-40cf-bd34-52fc8f98d2e9" />
-<img width="1480" height="1850" alt="Image" src="https://github.com/user-attachments/assets/76f41441-8820-422a-82f2-72cd04cf2189" />
+<img width="1752" height="1174" alt="Image" src="https://github.com/user-attachments/assets/3e3802ef-41ae-4838-84be-685d1bdeeae8" />
 
-- [**세부소개 및 올해 프로젝트 계획**](https://github.com/thekimk/DIVE-Research/blob/main/%5BDocument%5D/%EC%86%8C%EA%B0%9C%EC%9A%B4%EC%98%81%EC%9E%90%EB%A3%8C/DIVE_Introduction_20260101.pdf)
 - **정기모집 지원방법:** [`구글 폼`](https://docs.google.com/forms/d/e/1FAIpQLScWGLWgGfGMFT8fkvSRSA-bgmcd6IUw1TA234tH05XEQOQCzw/viewform) 작성시 지원 완료되며, 합격자는 지원 마감 후 2주내 통보 예정
 - **수시모집 지원방법:** 지원마감 후에도 [`구글 폼`](https://docs.google.com/forms/d/e/1FAIpQLScWGLWgGfGMFT8fkvSRSA-bgmcd6IUw1TA234tH05XEQOQCzw/viewform)을 작성하면 언제든 역량과 소그룹 상황을 고려하여 `추가선발!`할 수 있으며 다음 분기부터 활동 가능
 
+<br>
+
+<table>
+  <tr>
+    <td><img width="100%" alt="카드뉴스 1" src="https://github.com/user-attachments/assets/4bd84a62-0003-4f97-a531-9334524e7db1" /></td>
+    <td><img width="100%" alt="카드뉴스 2" src="https://github.com/user-attachments/assets/d3955337-1ae6-4732-9b0b-39ccc6c4bfde" /></td>
+    <td><img width="100%" alt="카드뉴스 3" src="https://github.com/user-attachments/assets/96898caf-c68b-4e6d-ac7e-a81033acac69" /></td>
+    <td><img width="100%" alt="카드뉴스 4" src="https://github.com/user-attachments/assets/ad3f57bd-3db6-41c3-9ad6-0d68bd2235bb" /></td>
+  </tr>
+  <tr>
+    <td><img width="100%" alt="카드뉴스 5" src="https://github.com/user-attachments/assets/33dce8ba-7632-47e9-99a4-a8cbe4351646" /></td>
+    <td><img width="100%" alt="카드뉴스 6" src="https://github.com/user-attachments/assets/66b1c10e-85f1-4252-88da-cef2834d9076" /></td>
+    <td><img width="100%" alt="카드뉴스 7" src="https://github.com/user-attachments/assets/424c8dda-4887-40cf-bd34-52fc8f98d2e9" /></td>
+    <td><img width="100%" alt="카드뉴스 8" src="https://github.com/user-attachments/assets/76f41441-8820-422a-82f2-72cd04cf2189" /></td>
+  </tr>
+</table>
 
