@@ -36,7 +36,6 @@
 - **정기모집 지원방법:** [`구글 폼`](https://docs.google.com/forms/d/e/1FAIpQLScWGLWgGfGMFT8fkvSRSA-bgmcd6IUw1TA234tH05XEQOQCzw/viewform) 작성시 지원 완료되며, 합격자는 지원 마감 후 2주내 통보 예정
 - **수시모집 지원방법:** 지원마감 후에도 [`구글 폼`](https://docs.google.com/forms/d/e/1FAIpQLScWGLWgGfGMFT8fkvSRSA-bgmcd6IUw1TA234tH05XEQOQCzw/viewform)을 작성하면 언제든 역량과 소그룹 상황을 고려하여 `추가선발!`할 수 있으며 다음 분기부터 활동 가능
 
-<br>
 <table>
   <tr>
     <td><img width="100%" alt="카드뉴스 1" src="https://github.com/user-attachments/assets/4bd84a62-0003-4f97-a531-9334524e7db1" /></td>
