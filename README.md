@@ -40,12 +40,16 @@
   <tr>
     <td><img width="100%" alt="카드뉴스 1" src="https://github.com/user-attachments/assets/4bd84a62-0003-4f97-a531-9334524e7db1" /></td>
     <td><img width="100%" alt="카드뉴스 2" src="https://github.com/user-attachments/assets/d3955337-1ae6-4732-9b0b-39ccc6c4bfde" /></td>
+  </tr>
+  <tr>
     <td><img width="100%" alt="카드뉴스 3" src="https://github.com/user-attachments/assets/96898caf-c68b-4e6d-ac7e-a81033acac69" /></td>
     <td><img width="100%" alt="카드뉴스 4" src="https://github.com/user-attachments/assets/ad3f57bd-3db6-41c3-9ad6-0d68bd2235bb" /></td>
   </tr>
   <tr>
     <td><img width="100%" alt="카드뉴스 5" src="https://github.com/user-attachments/assets/33dce8ba-7632-47e9-99a4-a8cbe4351646" /></td>
     <td><img width="100%" alt="카드뉴스 6" src="https://github.com/user-attachments/assets/66b1c10e-85f1-4252-88da-cef2834d9076" /></td>
+  </tr>
+  <tr>
     <td><img width="100%" alt="카드뉴스 7" src="https://github.com/user-attachments/assets/424c8dda-4887-40cf-bd34-52fc8f98d2e9" /></td>
     <td><img width="100%" alt="카드뉴스 8" src="https://github.com/user-attachments/assets/76f41441-8820-422a-82f2-72cd04cf2189" /></td>
   </tr>
