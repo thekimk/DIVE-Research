@@ -1,0 +1,12 @@
+{
+    "iterations": 450,
+    "depth": 6,
+    "learning_rate": 0.0028350270878736874,
+    "l2_leaf_reg": 3.948064245046801,
+    "random_state": 123,
+    "verbose": 0,
+    "allow_writing_files": false,
+    "task_type": "CPU",
+    "subsample": 0.7796556394357799,
+    "grow_policy": "SymmetricTree"
+}

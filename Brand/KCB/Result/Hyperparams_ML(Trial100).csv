@@ -1,0 +1,56 @@
+﻿Algorithm,Hyperparameter,Tuning Range,Best Value
+Logistic Regression,solver,Optuna Auto,saga
+Logistic Regression,penalty,Optuna Auto,elasticnet
+Logistic Regression,C,Optuna Auto,13.421754168112722
+Logistic Regression,class_weight,Optuna Auto,
+Logistic Regression,max_iter,Optuna Auto,1230
+Logistic Regression,random_state,Optuna Auto,123
+Logistic Regression,l1_ratio,Optuna Auto,0.9042239996449613
+Random Forest,n_estimators,Optuna Auto,250
+Random Forest,max_depth,Optuna Auto,
+Random Forest,max_features,Optuna Auto,
+Random Forest,min_samples_split,Optuna Auto,13
+Random Forest,min_samples_leaf,Optuna Auto,4
+Random Forest,bootstrap,Optuna Auto,False
+Random Forest,random_state,Optuna Auto,123
+Random Forest,n_jobs,Optuna Auto,-1
+Random Forest,class_weight,Optuna Auto,
+XGBoost,n_estimators,Optuna Auto,350
+XGBoost,max_depth,Optuna Auto,6
+XGBoost,learning_rate,Optuna Auto,0.03675764845412622
+XGBoost,subsample,Optuna Auto,0.6458011885519089
+XGBoost,colsample_bytree,Optuna Auto,0.6944465392989778
+XGBoost,min_child_weight,Optuna Auto,2.3275948535441993
+XGBoost,gamma,Optuna Auto,3.728806291852159
+XGBoost,reg_alpha,Optuna Auto,8.504545835955311e-07
+XGBoost,reg_lambda,Optuna Auto,1.8319866882878132e-05
+XGBoost,random_state,Optuna Auto,123
+XGBoost,n_jobs,Optuna Auto,-1
+XGBoost,tree_method,Optuna Auto,hist
+XGBoost,verbosity,Optuna Auto,0
+XGBoost,scale_pos_weight,Optuna Auto,0.7191157247004196
+LightGBM,n_estimators,Optuna Auto,450
+LightGBM,learning_rate,Optuna Auto,0.02178344915059749
+LightGBM,num_leaves,Optuna Auto,77
+LightGBM,max_depth,Optuna Auto,6
+LightGBM,min_child_samples,Optuna Auto,37
+LightGBM,subsample,Optuna Auto,0.6094598035544815
+LightGBM,colsample_bytree,Optuna Auto,0.5650043105060477
+LightGBM,min_split_gain,Optuna Auto,0.6767125887538923
+LightGBM,extra_trees,Optuna Auto,True
+LightGBM,reg_alpha,Optuna Auto,8.241905833193096e-05
+LightGBM,reg_lambda,Optuna Auto,4.835898433948642e-05
+LightGBM,random_state,Optuna Auto,123
+LightGBM,n_jobs,Optuna Auto,-1
+LightGBM,verbose,Optuna Auto,-1
+LightGBM,class_weight,Optuna Auto,balanced
+CatBoost,iterations,Optuna Auto,450
+CatBoost,depth,Optuna Auto,6
+CatBoost,learning_rate,Optuna Auto,0.0028350270878736874
+CatBoost,l2_leaf_reg,Optuna Auto,3.948064245046801
+CatBoost,random_state,Optuna Auto,123
+CatBoost,verbose,Optuna Auto,0
+CatBoost,allow_writing_files,Optuna Auto,False
+CatBoost,task_type,Optuna Auto,CPU
+CatBoost,subsample,Optuna Auto,0.7796556394357799
+CatBoost,grow_policy,Optuna Auto,SymmetricTree
