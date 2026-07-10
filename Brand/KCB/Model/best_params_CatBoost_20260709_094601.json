@@ -1,0 +1,17 @@
+{
+    "iterations": 300,
+    "depth": 7,
+    "learning_rate": 0.11262829649432482,
+    "l2_leaf_reg": 3.1174320340103048,
+    "random_state": 123,
+    "verbose": 0,
+    "allow_writing_files": false,
+    "task_type": "CPU",
+    "subsample": 0.7391085311659793,
+    "class_weights": [
+        0.5246647509578544,
+        10.635922330097088
+    ],
+    "scaler_type": "None",
+    "optimal_threshold": 0.6439228156478961
+}

@@ -1,0 +1,16 @@
+{
+    "n_estimators": 500,
+    "max_depth": 7,
+    "learning_rate": 0.011449809384844325,
+    "subsample": 0.7098887238044732,
+    "colsample_bytree": 0.6238166016790545,
+    "reg_alpha": 0.8172975379464229,
+    "reg_lambda": 0.0017208745508231484,
+    "random_state": 123,
+    "n_jobs": -1,
+    "tree_method": "hist",
+    "verbosity": 0,
+    "scale_pos_weight": 20.271844660194176,
+    "scaler_type": "MinMaxScaler",
+    "optimal_threshold": 0.5044556260108948
+}

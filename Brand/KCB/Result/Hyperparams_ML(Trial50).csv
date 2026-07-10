@@ -1,0 +1,61 @@
+﻿Algorithm,Hyperparameter,Tuning Range,Best Value
+Logistic Regression,solver,Optuna Auto,lbfgs
+Logistic Regression,penalty,Optuna Auto,l2
+Logistic Regression,C,Optuna Auto,53.56534747424272
+Logistic Regression,max_iter,Optuna Auto,331
+Logistic Regression,random_state,Optuna Auto,123
+Logistic Regression,n_jobs,Optuna Auto,-1
+Logistic Regression,class_weight,Optuna Auto,"{0: 0.5246647509578544, 1: 10.635922330097088}"
+Logistic Regression,scaler_type,Optuna Auto,MinMaxScaler
+Logistic Regression,optimal_threshold,Optuna Auto,0.8650872820213809
+Random Forest,n_estimators,Optuna Auto,400
+Random Forest,max_depth,Optuna Auto,
+Random Forest,max_features,Optuna Auto,sqrt
+Random Forest,min_samples_split,Optuna Auto,2
+Random Forest,min_samples_leaf,Optuna Auto,15
+Random Forest,bootstrap,Optuna Auto,True
+Random Forest,random_state,Optuna Auto,123
+Random Forest,n_jobs,Optuna Auto,-1
+Random Forest,class_weight,Optuna Auto,"{0: 0.5246647509578544, 1: 10.635922330097088}"
+Random Forest,scaler_type,Optuna Auto,RobustScaler
+Random Forest,optimal_threshold,Optuna Auto,0.5326232596700993
+XGBoost,n_estimators,Optuna Auto,500
+XGBoost,max_depth,Optuna Auto,7
+XGBoost,learning_rate,Optuna Auto,0.011449809384844325
+XGBoost,subsample,Optuna Auto,0.7098887238044732
+XGBoost,colsample_bytree,Optuna Auto,0.6238166016790545
+XGBoost,reg_alpha,Optuna Auto,0.8172975379464229
+XGBoost,reg_lambda,Optuna Auto,0.0017208745508231484
+XGBoost,random_state,Optuna Auto,123
+XGBoost,n_jobs,Optuna Auto,-1
+XGBoost,tree_method,Optuna Auto,hist
+XGBoost,verbosity,Optuna Auto,0
+XGBoost,scale_pos_weight,Optuna Auto,20.271844660194176
+XGBoost,scaler_type,Optuna Auto,MinMaxScaler
+XGBoost,optimal_threshold,Optuna Auto,0.5044556260108948
+LightGBM,n_estimators,Optuna Auto,300
+LightGBM,learning_rate,Optuna Auto,0.13177546461458453
+LightGBM,num_leaves,Optuna Auto,68
+LightGBM,max_depth,Optuna Auto,6
+LightGBM,subsample,Optuna Auto,0.7753698980576578
+LightGBM,colsample_bytree,Optuna Auto,0.6078407036934245
+LightGBM,reg_alpha,Optuna Auto,0.0024480871435762796
+LightGBM,reg_lambda,Optuna Auto,0.0021251702487199682
+LightGBM,random_state,Optuna Auto,123
+LightGBM,n_jobs,Optuna Auto,-1
+LightGBM,verbose,Optuna Auto,-1
+LightGBM,class_weight,Optuna Auto,"{0: 0.5246647509578544, 1: 10.635922330097088}"
+LightGBM,scaler_type,Optuna Auto,MinMaxScaler
+LightGBM,optimal_threshold,Optuna Auto,0.27283572086448904
+CatBoost,iterations,Optuna Auto,300
+CatBoost,depth,Optuna Auto,7
+CatBoost,learning_rate,Optuna Auto,0.11262829649432482
+CatBoost,l2_leaf_reg,Optuna Auto,3.1174320340103048
+CatBoost,random_state,Optuna Auto,123
+CatBoost,verbose,Optuna Auto,0
+CatBoost,allow_writing_files,Optuna Auto,False
+CatBoost,task_type,Optuna Auto,CPU
+CatBoost,subsample,Optuna Auto,0.7391085311659793
+CatBoost,class_weights,Optuna Auto,"[0.5246647509578544, 10.635922330097088]"
+CatBoost,scaler_type,Optuna Auto,None
+CatBoost,optimal_threshold,Optuna Auto,0.6439228156478961

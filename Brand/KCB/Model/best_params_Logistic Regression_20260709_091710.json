@@ -1,0 +1,14 @@
+{
+    "solver": "lbfgs",
+    "penalty": "l2",
+    "C": 53.56534747424272,
+    "max_iter": 331,
+    "random_state": 123,
+    "n_jobs": -1,
+    "class_weight": {
+        "0": 0.5246647509578544,
+        "1": 10.635922330097088
+    },
+    "scaler_type": "MinMaxScaler",
+    "optimal_threshold": 0.8650872820213809
+}

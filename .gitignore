@@ -18,3 +18,5 @@ Project/EducationCompetition/Model/
 Project/SubwayPrediction/Model/
 Brand/KTY/Model/
 Project/CRMRetention/Model/
+Brand/KCB/Model/shap_intervalues_LightGBM_20260710_090441.pkl
+Brand/KCB/Model/shap_values_LightGBM_20260710_090153.pkl

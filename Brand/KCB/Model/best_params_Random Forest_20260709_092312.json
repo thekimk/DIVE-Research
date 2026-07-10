@@ -1,0 +1,16 @@
+{
+    "n_estimators": 400,
+    "max_depth": null,
+    "max_features": "sqrt",
+    "min_samples_split": 2,
+    "min_samples_leaf": 15,
+    "bootstrap": true,
+    "random_state": 123,
+    "n_jobs": -1,
+    "class_weight": {
+        "0": 0.5246647509578544,
+        "1": 10.635922330097088
+    },
+    "scaler_type": "RobustScaler",
+    "optimal_threshold": 0.5326232596700993
+}
