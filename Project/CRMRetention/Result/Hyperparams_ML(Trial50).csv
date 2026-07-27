@@ -1,0 +1,41 @@
+﻿Algorithm,Hyperparameter,Tuning Range,Best Value
+XGBoost,n_estimators,Optuna Auto,500
+XGBoost,max_depth,Optuna Auto,12
+XGBoost,learning_rate,Optuna Auto,0.12271792305983271
+XGBoost,subsample,Optuna Auto,0.6277553603459224
+XGBoost,colsample_bytree,Optuna Auto,0.7838011213833838
+XGBoost,reg_alpha,Optuna Auto,0.016944170221175118
+XGBoost,reg_lambda,Optuna Auto,0.029204764656711235
+XGBoost,random_state,Optuna Auto,123
+XGBoost,n_jobs,Optuna Auto,-1
+XGBoost,tree_method,Optuna Auto,hist
+XGBoost,verbosity,Optuna Auto,0
+XGBoost,scale_pos_weight,Optuna Auto,809.2640108035112
+XGBoost,scaler_type,Optuna Auto,RobustScaler
+XGBoost,optimal_threshold,Optuna Auto,0.9999144077301025
+LightGBM,n_estimators,Optuna Auto,500
+LightGBM,learning_rate,Optuna Auto,0.16805538060486103
+LightGBM,num_leaves,Optuna Auto,84
+LightGBM,max_depth,Optuna Auto,10
+LightGBM,subsample,Optuna Auto,0.748170344782684
+LightGBM,colsample_bytree,Optuna Auto,0.5926918218880787
+LightGBM,reg_alpha,Optuna Auto,0.0046776126921606225
+LightGBM,reg_lambda,Optuna Auto,0.01177936165683936
+LightGBM,random_state,Optuna Auto,123
+LightGBM,n_jobs,Optuna Auto,-1
+LightGBM,verbose,Optuna Auto,-1
+LightGBM,class_weight,Optuna Auto,"{0: 0.5006178453425892, 1: 405.1320054017556}"
+LightGBM,scaler_type,Optuna Auto,Normalizer
+LightGBM,optimal_threshold,Optuna Auto,0.999523102270623
+CatBoost,iterations,Optuna Auto,300
+CatBoost,depth,Optuna Auto,8
+CatBoost,learning_rate,Optuna Auto,0.17590176818293932
+CatBoost,l2_leaf_reg,Optuna Auto,5.904097636238683
+CatBoost,random_state,Optuna Auto,123
+CatBoost,verbose,Optuna Auto,0
+CatBoost,allow_writing_files,Optuna Auto,False
+CatBoost,task_type,Optuna Auto,CPU
+CatBoost,subsample,Optuna Auto,0.5371781697523724
+CatBoost,class_weights,Optuna Auto,"[0.5006178453425892, 405.1320054017556]"
+CatBoost,scaler_type,Optuna Auto,StandardScaler
+CatBoost,optimal_threshold,Optuna Auto,0.9968705158986265
