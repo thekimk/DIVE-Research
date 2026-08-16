@@ -1,4 +1,5 @@
 .ipynb_checkpoints/
+*-checkpoint.ipynb
 .virtual_documents/
 \[Project\]/MovieCommentAnalysis/mlruns/
 \[Project\]/MovieCommentAnalysis/outputs/
