@@ -1,0 +1,37 @@
+유형 1. 학술 표준형 (논문의 방법론과 대상 데이터의 특성을 가장 완벽하게 명시)
+
+국문: 극단적 희소 CRM 환경에서 마케팅 도메인 지식 기반 데이터 중심 AI 구매 전환 예측 프레임워크
+
+영문: A Data-Centric AI Framework for Purchase Conversion Prediction via Domain Knowledge-Driven Feature Engineering in Imbalanced CRM Environments
+
+특징: 심사위원이 제목만 보고도 연구 대상(희소 CRM), 방법론(데이터 중심 AI 및 도메인 특성 공학), 타겟 과제(구매 전환)를 명확히 파악할 수 있는 가장 정석적인 구성입니다.
+
+유형 2. 메커니즘 및 설명 가능성 강조형 (동태적 지식 주입과 XAI 분석 부각)
+
+국문: 동태적 마케팅 지식 주입을 통한 이커머스 구매 전환 예측 및 설명 가능성 분석: 데이터 중심 AI 접근법
+
+영문: Predicting Purchase Conversion and Explainability in E-Commerce via Dynamic Marketing Knowledge Injection: A Data-Centric AI Approach
+
+특징: 정적 분석을 탈피한 '동태적 지식 주입'과 'SHAP 기반 설명 가능성'을 전면에 내세워 연구의 방법론적 깊이를 돋보이게 합니다.
+
+-----------------------------------------------------
+
+1. 마케팅연구 (Journal of Marketing Thought / Journal of Korean Marketing Association)
+
+마케팅 이론의 동태적 조작화, 고객 반응 메커니즘, 그리고 CRM 타겟팅 전략의 실무적 함의를 부각하는 구성이 심사위원의 호응을 얻기에 가장 적합합니다.
+
+국문: 동태적 마케팅 지식 주입을 통한 이커머스 구매 전환 예측 및 의사결정 메커니즘 분석: 데이터 중심 AI 접근법
+
+영문: Predicting Purchase Conversion and Decision-Making Mechanisms in E-Commerce via Dynamic Marketing Knowledge Injection: A Data-Centric AI Approach
+
+선정 사유: 마케팅 학술지 특성에 맞추어 '동태적 마케팅 지식', '구매 전환', 'SHAP 기반 의사결정 메커니즘(XAI)'을 전면에 내세워, 단순 알고리즘 비교를 넘어 마케팅 이론의 실증적 확장과 고객 반응 해석의 가치를 강조합니다.
+
+2. 한국경영과학회 (Korean Operations Research and Management Science Society)
+
+경영과학·비즈니스 애널리틱스 분야의 엄밀성에 맞추어 극단적 데이터 불균형(희소 데이터) 극복, 데이터 중심 AI 방법론, 그리고 정형 특성 공학의 공학적·계량적 엄밀성을 강조하는 구성이 유리합니다.
+
+국문: 극단적 희소 CRM 환경에서 도메인 지식 기반 데이터 중심 AI 구매 전환 예측 프레임워크
+
+영문: A Data-Centric AI Framework for Purchase Conversion Prediction via Domain Knowledge-Driven Feature Engineering in Imbalanced CRM Environments
+
+선정 사유: 경영과학회 심사위원들이 주목하는 연구 환경(Extreme Imbalance/Sparsity), 핵심 방법론(Data-Centric AI & Feature Engineering), 그리고 최적화 프레임워크를 명확히 제시하여 계량적 분석 프레임워크로서의 완성도를 부각합니다.
