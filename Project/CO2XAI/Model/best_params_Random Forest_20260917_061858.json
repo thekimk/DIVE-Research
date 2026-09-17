@@ -1,0 +1,11 @@
+{
+    "n_estimators": 500,
+    "max_depth": null,
+    "max_features": "sqrt",
+    "min_samples_split": 6,
+    "min_samples_leaf": 12,
+    "bootstrap": false,
+    "random_state": 123,
+    "n_jobs": -1,
+    "scaler_type": "None"
+}

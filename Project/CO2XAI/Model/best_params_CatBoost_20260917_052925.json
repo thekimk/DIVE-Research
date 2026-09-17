@@ -1,0 +1,14 @@
+{
+    "iterations": 300,
+    "depth": 5,
+    "learning_rate": 0.07240648254657131,
+    "l2_leaf_reg": 4.733269952756334,
+    "random_state": 123,
+    "verbose": 0,
+    "allow_writing_files": false,
+    "task_type": "GPU",
+    "devices": "1",
+    "bootstrap_type": "Bernoulli",
+    "subsample": 0.5357001093248753,
+    "scaler_type": "None"
+}

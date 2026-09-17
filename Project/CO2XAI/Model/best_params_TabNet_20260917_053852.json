@@ -1,0 +1,18 @@
+{
+    "scaler_type": "Normalizer",
+    "n_layers": 1,
+    "l2_regularization": 4.436056787546667e-06,
+    "batch_normalization": true,
+    "hidden_activation": "gelu",
+    "dropout": 0.012920774980111793,
+    "batch_size": 128,
+    "optimizer": "rmsprop",
+    "learning_rate": 0.003158679235908317,
+    "batch_size_tabnet": 256,
+    "n_d": 32,
+    "n_steps": 4,
+    "gamma": 1.2829948626199459,
+    "n_independent": 2,
+    "n_shared": 2,
+    "mask_type": "entmax"
+}

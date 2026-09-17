@@ -1,0 +1,13 @@
+{
+    "scaler_type": "RobustScaler",
+    "n_layers": 3,
+    "l2_regularization": 1.3759162406333983e-05,
+    "batch_normalization": true,
+    "hidden_activation": "relu",
+    "dropout": 0.08054685781096921,
+    "batch_size": 512,
+    "optimizer": "rmsprop",
+    "learning_rate": 0.00029713070984822935,
+    "first_layer_nodes": 128,
+    "shape": "funnel"
+}

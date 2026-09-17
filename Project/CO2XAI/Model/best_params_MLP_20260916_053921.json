@@ -1,0 +1,13 @@
+{
+    "scaler_type": "Normalizer",
+    "n_layers": 1,
+    "l2_regularization": 0.00013744203946538389,
+    "batch_normalization": false,
+    "hidden_activation": "relu",
+    "dropout": 0.47460169086109244,
+    "batch_size": 128,
+    "optimizer": "adamw",
+    "learning_rate": 0.000495630557643457,
+    "first_layer_nodes": 256,
+    "shape": "constant"
+}
