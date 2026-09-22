@@ -1,0 +1,13 @@
+{
+    "scaler_type": "MinMaxScaler",
+    "n_layers": 2,
+    "l2_regularization": 2.2075181064583877e-05,
+    "batch_normalization": false,
+    "hidden_activation": "swish",
+    "dropout": 0.0744874425107298,
+    "batch_size": 256,
+    "optimizer": "adamw",
+    "learning_rate": 0.00305281037907099,
+    "first_layer_nodes": 192,
+    "shape": "constant"
+}
