@@ -1,4 +1,4 @@
-﻿Feature,Feature Importance (Gini/Gain),Importance (%),Cumulative Importance (%)
+﻿Feature,Feature Importance (Gini/Gain/Mask),Importance (%),Cumulative Importance (%)
 num__fe_영업이익_매출,0.048117210443098114,4.811721044309811,4.811721044309811
 num__EBITDA대매출액,0.046854544069710985,4.685454406971099,9.49717545128091
 num__영업이익손실_연결,0.03580564572191387,3.5805645721913875,13.077740023472298
