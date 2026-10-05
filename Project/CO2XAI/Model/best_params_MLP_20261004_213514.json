@@ -1,0 +1,13 @@
+{
+    "scaler_type": "None",
+    "n_layers": 3,
+    "l2_regularization": 0.0001768644061863952,
+    "batch_normalization": false,
+    "hidden_activation": "selu",
+    "dropout": 0.18844727527346938,
+    "batch_size": 128,
+    "optimizer": "rmsprop",
+    "learning_rate": 0.001094578936160475,
+    "first_layer_nodes": 128,
+    "shape": "constant"
+}

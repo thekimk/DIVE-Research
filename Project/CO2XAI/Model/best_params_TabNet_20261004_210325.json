@@ -1,0 +1,18 @@
+{
+    "scaler_type": "None",
+    "n_layers": 2,
+    "l2_regularization": 3.0852477458125854e-05,
+    "batch_normalization": true,
+    "hidden_activation": "swish",
+    "dropout": 0.2808442420306621,
+    "batch_size": 1024,
+    "optimizer": "sgd",
+    "learning_rate": 0.002261871296398141,
+    "batch_size_tabnet": 256,
+    "n_d": 32,
+    "n_steps": 4,
+    "gamma": 1.1218367710805117,
+    "n_independent": 1,
+    "n_shared": 2,
+    "mask_type": "sparsemax"
+}

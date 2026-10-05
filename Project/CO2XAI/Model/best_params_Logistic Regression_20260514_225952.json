@@ -1,9 +1,0 @@
-{
-    "solver": "saga",
-    "penalty": "elasticnet",
-    "C": 0.04601646035212957,
-    "class_weight": null,
-    "max_iter": 1219,
-    "random_state": 123,
-    "l1_ratio": 0.35742630961622257
-}

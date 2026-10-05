@@ -1,0 +1,13 @@
+{
+    "scaler_type": "None",
+    "n_layers": 3,
+    "l2_regularization": 2.9147634672414247e-05,
+    "batch_normalization": false,
+    "hidden_activation": "relu",
+    "dropout": 0.4077716442623384,
+    "batch_size": 128,
+    "optimizer": "rmsprop",
+    "learning_rate": 0.0005452605226243908,
+    "first_layer_nodes": 256,
+    "shape": "funnel"
+}

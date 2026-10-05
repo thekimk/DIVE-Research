@@ -1,8 +1,0 @@
-{
-    "solver": "liblinear",
-    "penalty": "l2",
-    "C": 0.0027707367368844096,
-    "class_weight": "balanced",
-    "max_iter": 1503,
-    "random_state": 123
-}

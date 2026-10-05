@@ -1,0 +1,18 @@
+{
+    "scaler_type": "RobustScaler",
+    "n_layers": 2,
+    "l2_regularization": 1.613469265497002e-06,
+    "batch_normalization": false,
+    "hidden_activation": "selu",
+    "dropout": 0.1784360322675643,
+    "batch_size": 128,
+    "optimizer": "adam",
+    "learning_rate": 0.0033543099205406587,
+    "batch_size_tabnet": 256,
+    "n_d": 32,
+    "n_steps": 3,
+    "gamma": 1.1596991519559554,
+    "n_independent": 1,
+    "n_shared": 1,
+    "mask_type": "entmax"
+}

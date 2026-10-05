@@ -1,8 +1,0 @@
-{
-    "solver": "saga",
-    "penalty": "l2",
-    "C": 0.001049055249703983,
-    "class_weight": null,
-    "max_iter": 1910,
-    "random_state": 123
-}

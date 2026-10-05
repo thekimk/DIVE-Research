@@ -1,0 +1,13 @@
+{
+    "scaler_type": "StandardScaler",
+    "n_layers": 1,
+    "l2_regularization": 2.1089126868688346e-06,
+    "batch_normalization": false,
+    "hidden_activation": "gelu",
+    "dropout": 0.42973809255826545,
+    "batch_size": 512,
+    "optimizer": "adam",
+    "learning_rate": 0.001035715269954017,
+    "base_filters": 16,
+    "kernel_size": 3
+}
