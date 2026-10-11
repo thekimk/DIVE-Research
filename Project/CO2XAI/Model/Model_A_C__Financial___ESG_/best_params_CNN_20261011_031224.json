@@ -1,0 +1,14 @@
+{
+    "scaler_type": "None",
+    "n_layers": 3,
+    "l2_regularization": 7.87988406534007e-06,
+    "batch_normalization": false,
+    "hidden_activation": "relu",
+    "dropout": 0.25752638297578173,
+    "batch_size": 1024,
+    "optimizer": "rmsprop",
+    "learning_rate": 0.0005114066599217734,
+    "batch_size_cnn": 512,
+    "base_filters": 32,
+    "kernel_size": 7
+}

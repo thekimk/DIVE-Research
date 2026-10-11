@@ -1,0 +1,13 @@
+{
+    "scaler_type": "MinMaxScaler",
+    "n_layers": 2,
+    "l2_regularization": 2.6676784756048466e-06,
+    "batch_normalization": false,
+    "hidden_activation": "gelu",
+    "dropout": 0.14639959376214984,
+    "batch_size": 2048,
+    "optimizer": "adamw",
+    "learning_rate": 0.0002314220848688105,
+    "first_layer_nodes": 512,
+    "shape": "funnel"
+}

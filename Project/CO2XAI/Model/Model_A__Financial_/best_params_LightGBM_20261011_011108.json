@@ -1,0 +1,14 @@
+{
+    "n_estimators": 300,
+    "learning_rate": 0.011611924652390202,
+    "num_leaves": 113,
+    "max_depth": 4,
+    "subsample": 0.5317425951903035,
+    "colsample_bytree": 0.5840542477525291,
+    "reg_alpha": 0.0022246293013278833,
+    "reg_lambda": 0.22816965022261684,
+    "random_state": 123,
+    "n_jobs": 1,
+    "verbose": -1,
+    "scaler_type": "MinMaxScaler"
+}

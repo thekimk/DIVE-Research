@@ -1,0 +1,18 @@
+{
+    "scaler_type": "MinMaxScaler",
+    "n_layers": 3,
+    "l2_regularization": 8.705653135977257e-06,
+    "batch_normalization": false,
+    "hidden_activation": "relu",
+    "dropout": 0.08271237075691679,
+    "batch_size": 1024,
+    "optimizer": "sgd",
+    "learning_rate": 0.003250840690552465,
+    "batch_size_tabnet": 1024,
+    "n_d": 16,
+    "n_steps": 3,
+    "gamma": 1.2357288164252322,
+    "n_independent": 1,
+    "n_shared": 2,
+    "mask_type": "entmax"
+}

@@ -1,0 +1,49 @@
+﻿Model,Num_Features,Algorithm,TimeSeries CV (Mean ± Std),Diff vs Best,DM Statistic,Significance,p-value,Single RMSE
+Model A (Financial),157,Linear Regression,0.0885 ± 0.0282,+0.0309,6.470,***,0.0000,0.0601
+Model A (Financial),157,Random Forest (Best),0.0576 ± 0.0112,-,-,-,Benchmark,0.0503
+Model A (Financial),157,XGBoost,0.0577 ± 0.0115,+0.0001,0.405,ns,0.6858,0.0516
+Model A (Financial),157,LightGBM,0.0580 ± 0.0111,+0.0003,1.098,ns,0.2721,0.0525
+Model A (Financial),157,CatBoost,0.0586 ± 0.0115,+0.0010,3.030,***,0.0025,0.0526
+Model A (Financial),157,MLP,0.4427 ± 0.6357,+0.3851,5.604,***,0.0000,0.0527
+Model A (Financial),157,CNN,0.0613 ± 0.0103,+0.0037,7.059,***,0.0000,0.0538
+Model A (Financial),157,TabNet,0.0606 ± 0.0108,+0.0030,5.559,***,0.0000,0.0522
+Model A+B (Financial + Carbon),282,Linear Regression,19.2345 ± 18.6448,+19.1770,2.823,***,0.0048,9.5981
+Model A+B (Financial + Carbon),282,Random Forest (Best),0.0575 ± 0.0110,-,-,-,Benchmark,0.0504
+Model A+B (Financial + Carbon),282,XGBoost,0.0582 ± 0.0116,+0.0007,2.696,***,0.0070,0.0504
+Model A+B (Financial + Carbon),282,LightGBM,0.0582 ± 0.0119,+0.0007,2.121,**,0.0340,0.0505
+Model A+B (Financial + Carbon),282,CatBoost,0.0578 ± 0.0112,+0.0002,1.166,ns,0.2437,0.0503
+Model A+B (Financial + Carbon),282,MLP,0.0638 ± 0.0108,+0.0063,2.361,**,0.0183,0.0549
+Model A+B (Financial + Carbon),282,CNN,0.0612 ± 0.0112,+0.0036,8.409,***,0.0000,0.0557
+Model A+B (Financial + Carbon),282,TabNet,0.0619 ± 0.0095,+0.0044,8.009,***,0.0000,0.0532
+Model A+C (Financial + ESG),193,Linear Regression,6.0682 ± 6.8038,+6.0106,1.658,*,0.0973,1.1521
+Model A+C (Financial + ESG),193,Random Forest,0.0575 ± 0.0111,+0.0000,-0.122,ns,0.9026,0.0504
+Model A+C (Financial + ESG),193,XGBoost,0.0578 ± 0.0114,+0.0003,1.109,ns,0.2674,0.0509
+Model A+C (Financial + ESG),193,LightGBM,0.0579 ± 0.0115,+0.0004,1.502,ns,0.1331,0.0518
+Model A+C (Financial + ESG),193,CatBoost (Best),0.0575 ± 0.0113,-,-,-,Benchmark,0.0526
+Model A+C (Financial + ESG),193,MLP,0.0669 ± 0.0089,+0.0094,11.558,***,0.0000,0.0558
+Model A+C (Financial + ESG),193,CNN,0.0608 ± 0.0109,+0.0033,5.963,***,0.0000,0.0529
+Model A+C (Financial + ESG),193,TabNet,0.0609 ± 0.0105,+0.0034,5.835,***,0.0000,0.0556
+Model A+D (Financial + Macro),677,Linear Regression,925886.2825 ± 2777639.3930,+925886.2251,6.808,***,0.0000,2.8943
+Model A+D (Financial + Macro),677,Random Forest,0.0576 ± 0.0109,+0.0002,0.235,ns,0.8143,0.0503
+Model A+D (Financial + Macro),677,XGBoost (Best),0.0574 ± 0.0115,-,-,-,Benchmark,0.0504
+Model A+D (Financial + Macro),677,LightGBM,0.0577 ± 0.0112,+0.0003,1.703,*,0.0886,0.0515
+Model A+D (Financial + Macro),677,CatBoost,0.0575 ± 0.0118,+0.0001,1.247,ns,0.2126,0.0517
+Model A+D (Financial + Macro),677,MLP,0.0611 ± 0.0105,+0.0037,6.040,***,0.0000,0.0548
+Model A+D (Financial + Macro),677,CNN,0.0606 ± 0.0107,+0.0032,5.107,***,0.0000,0.0536
+Model A+D (Financial + Macro),677,TabNet,0.0607 ± 0.0108,+0.0033,5.298,***,0.0000,0.0564
+Model A+B+C (Financial + Carbon + ESG),318,Linear Regression,1388.4277 ± 3693.4495,+1388.3701,5.006,***,0.0000,4.7916
+Model A+B+C (Financial + Carbon + ESG),318,Random Forest,0.0579 ± 0.0110,+0.0003,0.971,ns,0.3315,0.0495
+Model A+B+C (Financial + Carbon + ESG),318,XGBoost,0.0578 ± 0.0115,+0.0003,1.160,ns,0.2461,0.0488
+Model A+B+C (Financial + Carbon + ESG),318,LightGBM,0.0585 ± 0.0119,+0.0009,3.173,***,0.0015,0.0496
+Model A+B+C (Financial + Carbon + ESG),318,CatBoost (Best),0.0576 ± 0.0114,-,-,-,Benchmark,0.0490
+Model A+B+C (Financial + Carbon + ESG),318,MLP,0.0607 ± 0.0095,+0.0031,5.270,***,0.0000,0.0541
+Model A+B+C (Financial + Carbon + ESG),318,CNN,0.0700 ± 0.0137,+0.0124,18.355,***,0.0000,0.0537
+Model A+B+C (Financial + Carbon + ESG),318,TabNet,0.0606 ± 0.0108,+0.0030,4.829,***,0.0000,0.0542
+Model A+B+C+D (Financial + Carbon + ESG + Macro),838,Linear Regression,635833.5250 ± 1907176.5808,+635833.4675,5.371,***,0.0000,22.1907
+Model A+B+C+D (Financial + Carbon + ESG + Macro),838,Random Forest (Best),0.0575 ± 0.0108,-,-,-,Benchmark,0.0506
+Model A+B+C+D (Financial + Carbon + ESG + Macro),838,XGBoost,0.0580 ± 0.0120,+0.0006,1.568,ns,0.1168,0.0505
+Model A+B+C+D (Financial + Carbon + ESG + Macro),838,LightGBM,0.0589 ± 0.0114,+0.0014,3.049,***,0.0023,0.0493
+Model A+B+C+D (Financial + Carbon + ESG + Macro),838,CatBoost,0.0580 ± 0.0115,+0.0005,1.679,*,0.0933,0.0499
+Model A+B+C+D (Financial + Carbon + ESG + Macro),838,MLP,1.3833 ± 3.0134,+1.3259,3.873,***,0.0001,0.0620
+Model A+B+C+D (Financial + Carbon + ESG + Macro),838,CNN,0.1362 ± 0.1176,+0.0787,22.465,***,0.0000,0.0540
+Model A+B+C+D (Financial + Carbon + ESG + Macro),838,TabNet,0.0606 ± 0.0108,+0.0032,8.025,***,0.0000,0.0582

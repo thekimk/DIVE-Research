@@ -1,0 +1,13 @@
+{
+    "scaler_type": "StandardScaler",
+    "n_layers": 1,
+    "l2_regularization": 3.9416351304078e-05,
+    "batch_normalization": false,
+    "hidden_activation": "swish",
+    "dropout": 0.3790573467542384,
+    "batch_size": 1024,
+    "optimizer": "rmsprop",
+    "learning_rate": 0.0007314575580897448,
+    "first_layer_nodes": 384,
+    "shape": "constant"
+}
