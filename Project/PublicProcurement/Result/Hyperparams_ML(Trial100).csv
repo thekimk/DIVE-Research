@@ -1,0 +1,50 @@
+﻿Algorithm,Hyperparameter,Tuning Range,Best Value
+Linear Regression,fit_intercept,Optuna Auto,True
+Linear Regression,n_jobs,Optuna Auto,-1
+Linear Regression,scaler_type,Optuna Auto,RobustScaler
+Random Forest,n_estimators,Optuna Auto,500
+Random Forest,max_depth,Optuna Auto,
+Random Forest,max_features,Optuna Auto,sqrt
+Random Forest,min_samples_split,Optuna Auto,6
+Random Forest,min_samples_leaf,Optuna Auto,10
+Random Forest,bootstrap,Optuna Auto,False
+Random Forest,random_state,Optuna Auto,123
+Random Forest,n_jobs,Optuna Auto,-1
+Random Forest,scaler_type,Optuna Auto,Normalizer
+XGBoost,n_estimators,Optuna Auto,500
+XGBoost,max_depth,Optuna Auto,12
+XGBoost,learning_rate,Optuna Auto,0.0148376503168889
+XGBoost,subsample,Optuna Auto,0.6632840147005112
+XGBoost,colsample_bytree,Optuna Auto,0.6030160006544346
+XGBoost,reg_alpha,Optuna Auto,0.02697012229211674
+XGBoost,reg_lambda,Optuna Auto,2.3627676965336764
+XGBoost,random_state,Optuna Auto,123
+XGBoost,n_jobs,Optuna Auto,1
+XGBoost,tree_method,Optuna Auto,hist
+XGBoost,device,Optuna Auto,cuda:0
+XGBoost,verbosity,Optuna Auto,0
+XGBoost,scaler_type,Optuna Auto,Normalizer
+LightGBM,n_estimators,Optuna Auto,300
+LightGBM,learning_rate,Optuna Auto,0.0430819805059951
+LightGBM,num_leaves,Optuna Auto,81
+LightGBM,max_depth,Optuna Auto,12
+LightGBM,subsample,Optuna Auto,0.6871214441818547
+LightGBM,colsample_bytree,Optuna Auto,0.6280806943751523
+LightGBM,reg_alpha,Optuna Auto,0.0012912654402346762
+LightGBM,reg_lambda,Optuna Auto,2.3555920428422312
+LightGBM,random_state,Optuna Auto,123
+LightGBM,n_jobs,Optuna Auto,1
+LightGBM,verbose,Optuna Auto,-1
+LightGBM,scaler_type,Optuna Auto,Normalizer
+CatBoost,iterations,Optuna Auto,400
+CatBoost,depth,Optuna Auto,8
+CatBoost,learning_rate,Optuna Auto,0.17678743046957562
+CatBoost,l2_leaf_reg,Optuna Auto,7.868223203583205
+CatBoost,random_state,Optuna Auto,123
+CatBoost,verbose,Optuna Auto,0
+CatBoost,allow_writing_files,Optuna Auto,False
+CatBoost,task_type,Optuna Auto,GPU
+CatBoost,devices,Optuna Auto,0
+CatBoost,bootstrap_type,Optuna Auto,Bernoulli
+CatBoost,subsample,Optuna Auto,0.7352631343167815
+CatBoost,scaler_type,Optuna Auto,Normalizer

@@ -1,50 +1,50 @@
 ﻿Algorithm,Hyperparameter,Tuning Range,Best Value
-Linear Regression,fit_intercept,Optuna Auto,True
+Linear Regression,fit_intercept,Optuna Auto,False
 Linear Regression,n_jobs,Optuna Auto,-1
-Linear Regression,scaler_type,Optuna Auto,RobustScaler
+Linear Regression,scaler_type,Optuna Auto,MinMaxScaler
 Random Forest,n_estimators,Optuna Auto,100
 Random Forest,max_depth,Optuna Auto,
 Random Forest,max_features,Optuna Auto,sqrt
-Random Forest,min_samples_split,Optuna Auto,7
-Random Forest,min_samples_leaf,Optuna Auto,10
-Random Forest,bootstrap,Optuna Auto,False
+Random Forest,min_samples_split,Optuna Auto,10
+Random Forest,min_samples_leaf,Optuna Auto,13
+Random Forest,bootstrap,Optuna Auto,True
 Random Forest,random_state,Optuna Auto,123
 Random Forest,n_jobs,Optuna Auto,-1
-Random Forest,scaler_type,Optuna Auto,RobustScaler
-XGBoost,n_estimators,Optuna Auto,400
+Random Forest,scaler_type,Optuna Auto,StandardScaler
+XGBoost,n_estimators,Optuna Auto,500
 XGBoost,max_depth,Optuna Auto,11
-XGBoost,learning_rate,Optuna Auto,0.01786343319935743
-XGBoost,subsample,Optuna Auto,0.5622938641468017
-XGBoost,colsample_bytree,Optuna Auto,0.5377954066399322
-XGBoost,reg_alpha,Optuna Auto,0.09277334556777742
-XGBoost,reg_lambda,Optuna Auto,0.2388375143733795
+XGBoost,learning_rate,Optuna Auto,0.039665971699264314
+XGBoost,subsample,Optuna Auto,0.7268272345487784
+XGBoost,colsample_bytree,Optuna Auto,0.5546504221310357
+XGBoost,reg_alpha,Optuna Auto,0.09878079869783628
+XGBoost,reg_lambda,Optuna Auto,2.774744198698765
 XGBoost,random_state,Optuna Auto,123
 XGBoost,n_jobs,Optuna Auto,1
 XGBoost,tree_method,Optuna Auto,hist
 XGBoost,device,Optuna Auto,cuda:0
 XGBoost,verbosity,Optuna Auto,0
 XGBoost,scaler_type,Optuna Auto,Normalizer
-LightGBM,n_estimators,Optuna Auto,400
-LightGBM,learning_rate,Optuna Auto,0.023043086669863832
-LightGBM,num_leaves,Optuna Auto,112
-LightGBM,max_depth,Optuna Auto,12
-LightGBM,subsample,Optuna Auto,0.517495152959122
-LightGBM,colsample_bytree,Optuna Auto,0.5884047189670193
-LightGBM,reg_alpha,Optuna Auto,0.005983063228367378
-LightGBM,reg_lambda,Optuna Auto,0.0016379598574390412
+LightGBM,n_estimators,Optuna Auto,200
+LightGBM,learning_rate,Optuna Auto,0.03970076883267089
+LightGBM,num_leaves,Optuna Auto,118
+LightGBM,max_depth,Optuna Auto,6
+LightGBM,subsample,Optuna Auto,0.5561663460089704
+LightGBM,colsample_bytree,Optuna Auto,0.6881429291922383
+LightGBM,reg_alpha,Optuna Auto,0.08806474061978938
+LightGBM,reg_lambda,Optuna Auto,0.21368791874854115
 LightGBM,random_state,Optuna Auto,123
 LightGBM,n_jobs,Optuna Auto,1
 LightGBM,verbose,Optuna Auto,-1
 LightGBM,scaler_type,Optuna Auto,Normalizer
-CatBoost,iterations,Optuna Auto,200
-CatBoost,depth,Optuna Auto,7
-CatBoost,learning_rate,Optuna Auto,0.08268172381434186
-CatBoost,l2_leaf_reg,Optuna Auto,3.883133111730312
+CatBoost,iterations,Optuna Auto,400
+CatBoost,depth,Optuna Auto,4
+CatBoost,learning_rate,Optuna Auto,0.08106698464878825
+CatBoost,l2_leaf_reg,Optuna Auto,9.826587264736963
 CatBoost,random_state,Optuna Auto,123
 CatBoost,verbose,Optuna Auto,0
 CatBoost,allow_writing_files,Optuna Auto,False
 CatBoost,task_type,Optuna Auto,GPU
 CatBoost,devices,Optuna Auto,0
 CatBoost,bootstrap_type,Optuna Auto,Bernoulli
-CatBoost,subsample,Optuna Auto,0.583935238190865
+CatBoost,subsample,Optuna Auto,0.7553566715456154
 CatBoost,scaler_type,Optuna Auto,Normalizer

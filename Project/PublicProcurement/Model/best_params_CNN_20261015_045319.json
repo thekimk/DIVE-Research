@@ -1,0 +1,14 @@
+{
+    "scaler_type": "RobustScaler",
+    "n_layers": 2,
+    "l2_regularization": 0.000583519757904376,
+    "batch_normalization": false,
+    "hidden_activation": "gelu",
+    "dropout": 0.26376645686549915,
+    "batch_size": 1024,
+    "optimizer": "rmsprop",
+    "learning_rate": 0.0020323037235173867,
+    "batch_size_cnn": 128,
+    "base_filters": 32,
+    "kernel_size": 3
+}
