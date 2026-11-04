@@ -1,0 +1,15 @@
+{
+    "n_estimators": 500,
+    "max_depth": 4,
+    "learning_rate": 0.07934449382672461,
+    "subsample": 0.7692325621843624,
+    "colsample_bytree": 0.6714325679860412,
+    "reg_alpha": 0.00826661110629443,
+    "reg_lambda": 3.5147771783995343,
+    "random_state": 123,
+    "n_jobs": 1,
+    "tree_method": "hist",
+    "device": "cuda:1",
+    "verbosity": 0,
+    "scaler_type": "None"
+}

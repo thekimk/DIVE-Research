@@ -1,0 +1,14 @@
+{
+    "scaler_type": "StandardScaler",
+    "n_layers": 2,
+    "l2_regularization": 1.5081220525829407e-06,
+    "batch_normalization": false,
+    "hidden_activation": "swish",
+    "dropout": 0.2886937565711259,
+    "batch_size": 4096,
+    "optimizer": "adam",
+    "learning_rate": 0.0048062096884829535,
+    "batch_size_cnn": 256,
+    "base_filters": 32,
+    "kernel_size": 7
+}

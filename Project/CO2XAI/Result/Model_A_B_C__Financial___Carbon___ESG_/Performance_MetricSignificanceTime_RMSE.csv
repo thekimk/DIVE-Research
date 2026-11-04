@@ -1,0 +1,6 @@
+﻿Algorithm,TimeSeries CV (Mean ± Std),Diff vs Best,DM Statistic,Significance,p-value,p-value (t-test),Single RMSE
+Linear Regression,0.0666 ± 0.0169,+0.0473,19.860,***,0.0000,,0.0490
+Random Forest,0.0502 ± 0.0076,+0.0309,21.090,***,0.0000,,0.0414
+XGBoost,0.0200 ± 0.0056,+0.0007,1.255,ns,0.2096,,0.0120
+LightGBM,0.0228 ± 0.0057,+0.0034,6.446,***,0.0000,,0.0156
+CatBoost (Best),0.0193 ± 0.0058,-,-,-,Benchmark,-,0.0158
